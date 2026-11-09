@@ -1,0 +1,25 @@
+{
+  "id": "cinemana",
+  "name": "Cinemana",
+  "version": "0.3.0",
+  "description": "Cinemana movie and TV sources for Nuvio",
+  "author": "hashimxc12",
+  "scrapers": [
+    {
+      "id": "cinemana",
+      "name": "Cinemana",
+      "description": "Cinemana movie and series sources",
+      "version": "0.3.0",
+      "filename": "index.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "hasSettings": false,
+      "supportedPlatforms": [
+        "android"
+      ]
+    }
+  ]
+}
