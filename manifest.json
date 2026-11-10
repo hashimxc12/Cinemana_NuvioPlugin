@@ -1,7 +1,7 @@
 {
   "id": "cinemana",
   "name": "Cinemana",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Cinemana movie and TV sources for Nuvio",
   "author": "hashimxc12",
   "scrapers": [
@@ -9,7 +9,7 @@
       "id": "cinemana",
       "name": "Cinemana",
       "description": "Cinemana movie and series sources",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "filename": "index.js",
       "supportedTypes": [
         "movie",

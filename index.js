@@ -180,7 +180,13 @@ function getDetails(id) {
 
 function getStreams(videoId) {
   return cached('player-' + videoId, function () {
-    return api('transcodedFiles/id/' + encodeURIComponent(videoId)).then(listFrom);
+    // الحل الاحتياطي: يجرب المسار الأول، وإن فشل يجرب المسار الثاني
+    return api('transcodedFiles/id/' + encodeURIComponent(videoId))
+      .then(listFrom)
+      .catch(function (error) {
+        console.log('[CINEMANA PATH FALLBACK] trying transcoddedFiles');
+        return api('transcoddedFiles/id/' + encodeURIComponent(videoId)).then(listFrom);
+      });
   }, 30000);
 }
 
